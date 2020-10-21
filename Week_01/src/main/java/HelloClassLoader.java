@@ -21,7 +21,7 @@ public class HelloClassLoader extends ClassLoader {
 	protected Class<?> findClass(String name) {
 		byte[] bytes = null;
 		try {
-			bytes = Files.readAllBytes(Paths.get("/Users/zeyangg/ww/JAVA-000/Week_01/src/main/resources/Hello.xlass"));
+			bytes = Files.readAllBytes(Paths.get("/Users/xxx/JAVA-000/Week_01/src/main/resources/Hello.xlass"));
 			for (int i = 0; i < bytes.length; i++) {
 				byte a = (byte) (255 - bytes[i]);
 				bytes[i] = a;
