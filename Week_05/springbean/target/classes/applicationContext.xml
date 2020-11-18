@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="school02" class="com.holddie.geektime.bean.School">
+        <property name="name" value="第二所学校，等级BBBBB"/>
+    </bean>
+
+    <bean id="class01" class="com.holddie.geektime.bean.CClass">
+        <property name="school" ref="school02"/>
+        <property name="name" value="重点班级"/>
+    </bean>
+
+    <bean id="student" class="com.holddie.geektime.bean.Student">
+        <property name="name" value="战三"/>
+        <property name="age" value="18"/>
+        <property name="code" value="zs"/>
+    </bean>
+    
+    <bean id="student123" class="com.holddie.geektime.bean.Student">
+        <property name="name" value="小明"/>
+        <property name="age" value="12"/>
+        <property name="code" value="xm"/>
+    </bean>
+    
+    <bean id="student100" class="com.holddie.geektime.bean.Student">
+        <property name="name" value="小l"/>
+        <property name="age" value="34"/>
+        <property name="code" value="xl"/>
+    </bean>
+</beans>

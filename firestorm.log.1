@@ -1,0 +1,918 @@
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/gd/380861253zv3pr1n4kvm43l40000gn/T (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.processId: 194 (auto-detected)
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+DEBUG main io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828] REGISTERED
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828] BIND: 0.0.0.0/0.0.0.0:8804
+INFO main com.holddie.geektime.HttpServer - 开启netty http服务器，监听地址和端口为 http://127.0.0.1:8804/
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] ACTIVE
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] READ: [id: 0xa254f47c, L:/127.0.0.1:8804 - R:/127.0.0.1:65274]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] READ COMPLETE
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3e89a86d
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/name
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,name
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] READ: [id: 0x453d06f0, L:/127.0.0.1:8804 - R:/127.0.0.1:65278]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] READ COMPLETE
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/name
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,name
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] READ: [id: 0x49bf06bb, L:/127.0.0.1:8804 - R:/127.0.0.1:65281]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x8c49a828, L:/0:0:0:0:0:0:0:0:8804] READ COMPLETE
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/123
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,123
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/gd/380861253zv3pr1n4kvm43l40000gn/T (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.processId: 4822 (auto-detected)
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+DEBUG main io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684] REGISTERED
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684] BIND: 0.0.0.0/0.0.0.0:8088
+INFO main com.holddie.geektime.HttpServer - 开启netty http服务器，监听地址和端口为 http://127.0.0.1:8088/
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] ACTIVE
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0x29ff0a1b, L:/127.0.0.1:8088 - R:/127.0.0.1:50464]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3e89a86d
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0xf78e10f0, L:/127.0.0.1:8088 - R:/127.0.0.1:50469]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/123
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,123
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+INFO main com.holddie.geektime.NettyGatewayServerApplication - NIOGateway 1.0.0 starting...
+INFO main com.holddie.geektime.NettyGatewayServerApplication - NIOGateway 1.0.0 started at http://localhost:8888 for server:http://localhost:8088
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/gd/380861253zv3pr1n4kvm43l40000gn/T (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.processId: 4855 (auto-detected)
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+DEBUG main io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+WARN main io.netty.bootstrap.ServerBootstrap - Unknown channel option 'TCP_NODELAY' for channel '[id: 0x60eb18b0]'
+WARN main io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x60eb18b0]'
+WARN main io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_SNDBUF' for channel '[id: 0x60eb18b0]'
+WARN main io.netty.bootstrap.ServerBootstrap - Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x60eb18b0]'
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0] REGISTERED
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0] BIND: 0.0.0.0/0.0.0.0:8888
+INFO main com.holddie.geektime.inbound.HttpInboundServer - 开启netty http服务器，监听地址和端口为 http://127.0.0.1:8888/
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] ACTIVE
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x40c2d55a, L:/127.0.0.1:8888 - R:/127.0.0.1:50477]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@70f39775
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 1] start execution
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 1] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0x8efd74f0, L:/127.0.0.1:8088 - R:/127.0.0.1:50478]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 1] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][rw:]: Set timeout 1000
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-0 [ACTIVE]: Connected
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 1] Start connection routing
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 1] route completed
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 1] Connection route established
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 1] Attempt 1 to execute request
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 1] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 1] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Upgrade-Insecure-Requests: 1
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Sec-Fetch-Site: none
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Sec-Fetch-Mode: navigate
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Sec-Fetch-User: ?1
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Sec-Fetch-Dest: document
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> content-length: 0
+DEBUG I/O dispatcher 1 org.apache.http.headers - http-outgoing-0 >> auth-token: auto add token
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 1] Request completed
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][rw:w]: 584 bytes written
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Upgrade-Insecure-Requests: 1[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Sec-Fetch-Site: none[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Sec-Fetch-Mode: navigate[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Sec-Fetch-User: ?1[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Sec-Fetch-Dest: document[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-0 [ACTIVE] Request ready
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-0 [ACTIVE] Timeout
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 1] Cancelled
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 127.0.0.1:50478<->127.0.0.1:8088[ACTIVE][r:w]: Shutdown
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 1] connection aborted
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-0][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-0 0.0.0.0:50478<->127.0.0.1:8088[CLOSED][]: Shutdown
+DEBUG I/O dispatcher 1 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-0 [CLOSED]: Disconnected
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x28486063, L:/127.0.0.1:8888 - R:/127.0.0.1:50480]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/hello/1233123
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] start execution
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 2] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0x8a359cc0, L:/127.0.0.1:8088 - R:/127.0.0.1:50481]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 2] Connection allocated: CPoolProxy{http-outgoing-1 [ACTIVE]}
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:]: Set timeout 1000
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE]: Connected
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 2] Start connection routing
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 2] route completed
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Connection route established
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Attempt 1 to execute request
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> GET /hello/1233123 HTTP/1.1
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Upgrade-Insecure-Requests: 1
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-Site: none
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-Mode: navigate
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-User: ?1
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-Dest: document
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> content-length: 0
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> auth-token: auto add token
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Request completed
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:w]: 597 bytes written
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "GET /hello/1233123 HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Upgrade-Insecure-Requests: 1[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-Site: none[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-Mode: navigate[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-User: ?1[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-Dest: document[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE] Request ready
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/1233123
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,1233123
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:r]: 108 bytes read
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 << "content-Length: 13[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 << "connection: keep-alive[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 << "hello,1233123"
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 << Content-Type: application/json
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 << content-Length: 13
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 << connection: keep-alive
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE(13)] Response received
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Response received HTTP/1.1 200 OK
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE(13)] Input ready
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Consume content
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 2] Connection can be kept alive for 6000 MILLISECONDS
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 2] Response processed
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 2] releasing connection
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection [id: http-outgoing-1][route: {}->http://localhost:8088] can be kept alive for 6.0 seconds
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 0
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-1][route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+INFO I/O dispatcher 25 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 请求真实服务返回结果是：[104, 101, 108, 108, 111, 44, 49, 50, 51, 51, 49, 50, 51]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE] [content length: 13; pos: 13; completed: true]
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/favicon.ico
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.MainClientExec - [exchange: 3] start execution
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 3] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 1000
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 3] Connection allocated: CPoolProxy{http-outgoing-1 [ACTIVE]}
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:r]: Set attribute http.nio.exchange-handler
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:r]: Event set [w]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE] Request ready
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 3] Attempt 1 to execute request
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 3] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 3] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> GET /favicon.ico HTTP/1.1
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-Site: same-origin
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-Mode: no-cors
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Sec-Fetch-Dest: image
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Referer: http://127.0.0.1:8888/hello/1233123
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> content-length: 0
+DEBUG I/O dispatcher 25 org.apache.http.headers - http-outgoing-1 >> auth-token: auto add token
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:w]: Event set [w]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.MainClientExec - [exchange: 3] Request completed
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][rw:w]: 509 bytes written
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "GET /favicon.ico HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-Site: same-origin[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-Mode: no-cors[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Sec-Fetch-Dest: image[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Referer: http://127.0.0.1:8888/hello/1233123[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE] Request ready
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [ACTIVE] Timeout
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 3] Cancelled
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 127.0.0.1:50481<->127.0.0.1:8088[ACTIVE][r:w]: Shutdown
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 3] connection aborted
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-1][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-1 0.0.0.0:50481<->127.0.0.1:8088[CLOSED][]: Shutdown
+DEBUG I/O dispatcher 25 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-1 [CLOSED]: Disconnected
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0xf2216fcd, L:/127.0.0.1:8888 - R:/127.0.0.1:50482]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/hello/1233123
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] start execution
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 4] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0xb5f24367, L:/127.0.0.1:8088 - R:/127.0.0.1:50483]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x42fd3684, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-2][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 4] Connection allocated: CPoolProxy{http-outgoing-2 [ACTIVE]}
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:]: Set timeout 1000
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE]: Connected
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 4] Start connection routing
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 4] route completed
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Connection route established
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Attempt 1 to execute request
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> GET /hello/1233123 HTTP/1.1
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Cache-Control: max-age=0
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Upgrade-Insecure-Requests: 1
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-Site: none
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-Mode: navigate
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-User: ?1
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-Dest: document
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> content-length: 0
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> auth-token: auto add token
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Request completed
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:w]: 623 bytes written
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "GET /hello/1233123 HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Cache-Control: max-age=0[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Upgrade-Insecure-Requests: 1[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-Site: none[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-Mode: navigate[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-User: ?1[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-Dest: document[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE] Request ready
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/1233123
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,1233123
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:r]: 108 bytes read
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 << "content-Length: 13[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 << "connection: keep-alive[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 << "hello,1233123"
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 << Content-Type: application/json
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 << content-Length: 13
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 << connection: keep-alive
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE(13)] Response received
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Response received HTTP/1.1 200 OK
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE(13)] Input ready
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Consume content
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 4] Connection can be kept alive for 6000 MILLISECONDS
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 4] Response processed
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 4] releasing connection
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-2][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection [id: http-outgoing-2][route: {}->http://localhost:8088] can be kept alive for 6.0 seconds
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 0
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-2][route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+INFO I/O dispatcher 49 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 请求真实服务返回结果是：[104, 101, 108, 108, 111, 44, 49, 50, 51, 51, 49, 50, 51]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE] [content length: 13; pos: 13; completed: true]
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-3 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/favicon.ico
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.MainClientExec - [exchange: 5] start execution
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 5] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 1000
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-2][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 5] Connection allocated: CPoolProxy{http-outgoing-2 [ACTIVE]}
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:r]: Set attribute http.nio.exchange-handler
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:r]: Event set [w]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE] Request ready
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 5] Attempt 1 to execute request
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 5] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 5] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> GET /favicon.ico HTTP/1.1
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-Site: same-origin
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-Mode: no-cors
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Sec-Fetch-Dest: image
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Referer: http://127.0.0.1:8888/hello/1233123
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> content-length: 0
+DEBUG I/O dispatcher 49 org.apache.http.headers - http-outgoing-2 >> auth-token: auto add token
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:w]: Event set [w]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.MainClientExec - [exchange: 5] Request completed
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][rw:w]: 509 bytes written
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "GET /favicon.ico HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-Site: same-origin[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-Mode: no-cors[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Sec-Fetch-Dest: image[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Referer: http://127.0.0.1:8888/hello/1233123[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE] Request ready
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [ACTIVE] Timeout
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 5] Cancelled
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 127.0.0.1:50483<->127.0.0.1:8088[ACTIVE][r:w]: Shutdown
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 5] connection aborted
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-2][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-2][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-2 0.0.0.0:50483<->127.0.0.1:8088[CLOSED][]: Shutdown
+DEBUG I/O dispatcher 49 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-2 [CLOSED]: Disconnected
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/gd/380861253zv3pr1n4kvm43l40000gn/T (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5325 (auto-detected)
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+DEBUG main io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811] REGISTERED
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811] BIND: 0.0.0.0/0.0.0.0:8088
+INFO main com.holddie.geektime.HttpServer - 开启netty http服务器，监听地址和端口为 http://127.0.0.1:8088/
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811, L:/0:0:0:0:0:0:0:0:8088] ACTIVE
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x2aeee775, L:/127.0.0.1:8888 - R:/127.0.0.1:50641]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/hello/1233123
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] start execution
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 6] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-3][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 6] Connection allocated: CPoolProxy{http-outgoing-3 [ACTIVE]}
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:]: Set timeout 1000
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE]: Connected
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 6] Start connection routing
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 6] route completed
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Connection route established
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Attempt 1 to execute request
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> GET /hello/1233123 HTTP/1.1
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Cache-Control: max-age=0
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Upgrade-Insecure-Requests: 1
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-Site: none
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-Mode: navigate
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-User: ?1
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-Dest: document
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> content-length: 0
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> auth-token: auto add token
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Request completed
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:w]: 623 bytes written
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "GET /hello/1233123 HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Cache-Control: max-age=0[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Upgrade-Insecure-Requests: 1[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-Site: none[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-Mode: navigate[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-User: ?1[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-Dest: document[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE] Request ready
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0xa68d3126, L:/127.0.0.1:8088 - R:/127.0.0.1:50642]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+DEBUG nioEventLoopGroup-3-1 io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+DEBUG nioEventLoopGroup-3-1 io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@612019bc
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+DEBUG nioEventLoopGroup-3-1 io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/1233123
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,1233123
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:r]: 84 bytes read
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 << "Content-Type: application/json[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 << "content-Length: 13[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 << "[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 << "hello,1233123"
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 << Content-Type: application/json
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 << content-Length: 13
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE(13)] Response received
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Response received HTTP/1.1 200 OK
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE(13)] Input ready
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Consume content
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 6] Connection can be kept alive for 6000 MILLISECONDS
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 6] Response processed
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 6] releasing connection
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-3][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection [id: http-outgoing-3][route: {}->http://localhost:8088] can be kept alive for 6.0 seconds
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 0
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-3][route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+INFO I/O dispatcher 73 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 请求真实服务返回结果是：[104, 101, 108, 108, 111, 44, 49, 50, 51, 51, 49, 50, 51]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE] [content length: 13; pos: 13; completed: true]
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-4 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/favicon.ico
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.MainClientExec - [exchange: 7] start execution
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 7] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 1000
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-3][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 7] Connection allocated: CPoolProxy{http-outgoing-3 [ACTIVE]}
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:r]: Set attribute http.nio.exchange-handler
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:r]: Event set [w]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE] Request ready
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 7] Attempt 1 to execute request
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 7] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 7] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> GET /favicon.ico HTTP/1.1
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-Site: same-origin
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-Mode: no-cors
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Sec-Fetch-Dest: image
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Referer: http://127.0.0.1:8888/hello/1233123
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> content-length: 0
+DEBUG I/O dispatcher 73 org.apache.http.headers - http-outgoing-3 >> auth-token: auto add token
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:w]: Event set [w]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.MainClientExec - [exchange: 7] Request completed
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][rw:w]: 509 bytes written
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "GET /favicon.ico HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-Site: same-origin[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-Mode: no-cors[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Sec-Fetch-Dest: image[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Referer: http://127.0.0.1:8888/hello/1233123[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE] Request ready
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-1 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [ACTIVE] Timeout
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 7] Cancelled
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 127.0.0.1:50642<->127.0.0.1:8088[ACTIVE][r:w]: Shutdown
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 7] connection aborted
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-3][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-3][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-3 0.0.0.0:50642<->127.0.0.1:8088[CLOSED][]: Shutdown
+DEBUG I/O dispatcher 73 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-3 [CLOSED]: Disconnected
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x0029b7a0, L:/127.0.0.1:8888 - R:/127.0.0.1:50646]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0x60eb18b0, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/hello/1233123
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] start execution
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 8] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-1 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811, L:/0:0:0:0:0:0:0:0:8088] READ: [id: 0xe9d29b7d, L:/127.0.0.1:8088 - R:/127.0.0.1:50647]
+INFO nioEventLoopGroup-2-1 io.netty.handler.logging.LoggingHandler - [id: 0xcc2f7811, L:/0:0:0:0:0:0:0:0:8088] READ COMPLETE
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-4][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 8] Connection allocated: CPoolProxy{http-outgoing-4 [ACTIVE]}
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:]: Set timeout 1000
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE]: Connected
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 8] Start connection routing
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 8] route completed
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Connection route established
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Attempt 1 to execute request
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> GET /hello/1233123 HTTP/1.1
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Cache-Control: max-age=0
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Upgrade-Insecure-Requests: 1
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-Site: none
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-Mode: navigate
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-User: ?1
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-Dest: document
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> content-length: 0
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> auth-token: auto add token
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:]: Event set [w]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Request completed
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:w]: 623 bytes written
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "GET /hello/1233123 HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Cache-Control: max-age=0[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Upgrade-Insecure-Requests: 1[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-Site: none[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-Mode: navigate[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-User: ?1[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-Dest: document[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE] Request ready
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/hello/1233123
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取到的参数为：
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取请求方法：GET
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 获取到的 value：hello,1233123
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:r]: 84 bytes read
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 << "Content-Type: application/json[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 << "content-Length: 13[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 << "[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 << "hello,1233123"
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 << HTTP/1.1 200 OK
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 << Content-Type: application/json
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 << content-Length: 13
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE(13)] Response received
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Response received HTTP/1.1 200 OK
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE(13)] Input ready
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Consume content
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 8] Connection can be kept alive for 6000 MILLISECONDS
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 8] Response processed
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 8] releasing connection
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-4][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection [id: http-outgoing-4][route: {}->http://localhost:8088] can be kept alive for 6.0 seconds
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 0
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-4][route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+INFO I/O dispatcher 97 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 请求真实服务返回结果是：[104, 101, 108, 108, 111, 44, 49, 50, 51, 51, 49, 50, 51]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE] [content length: 13; pos: 13; completed: true]
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.inbound.HttpInboundHandler - 开始进入自定义处理器
+INFO nioEventLoopGroup-3-5 com.holddie.geektime.outbound.httpclient4.HttpOutboundHandler - 拼接之后的链接是：http://localhost:8088/favicon.ico
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.MainClientExec - [exchange: 9] start execution
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG proxyService-thread-2 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 9] Request connection for {}->http://localhost:8088
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8088][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:r]: Set timeout 1000
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection leased: [id: http-outgoing-4][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 9] Connection allocated: CPoolProxy{http-outgoing-4 [ACTIVE]}
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:r]: Set attribute http.nio.exchange-handler
+DEBUG proxyService-thread-2 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:r]: Event set [w]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE] Request ready
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 9] Attempt 1 to execute request
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 9] Target auth state: UNCHALLENGED
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 9] Proxy auth state: UNCHALLENGED
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> GET /favicon.ico HTTP/1.1
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Host: 127.0.0.1:8888
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Connection: Keep-Alive
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-Site: same-origin
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-Mode: no-cors
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Sec-Fetch-Dest: image
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Referer: http://127.0.0.1:8888/hello/1233123
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Accept-Encoding: gzip, deflate, br
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> Accept-Language: zh-CN,zh;q=0.9
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> content-length: 0
+DEBUG I/O dispatcher 97 org.apache.http.headers - http-outgoing-4 >> auth-token: auto add token
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:w]: Event set [w]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.MainClientExec - [exchange: 9] Request completed
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][rw:w]: 509 bytes written
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "GET /favicon.ico HTTP/1.1[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Host: 127.0.0.1:8888[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-Site: same-origin[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-Mode: no-cors[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Sec-Fetch-Dest: image[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Referer: http://127.0.0.1:8888/hello/1233123[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Accept-Encoding: gzip, deflate, br[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "Accept-Language: zh-CN,zh;q=0.9[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "content-length: 0[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "auth-token: auto add token[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.wire - http-outgoing-4 >> "[\r][\n]"
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE] Request ready
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:w]: Event cleared [w]
+INFO nioEventLoopGroup-3-2 com.holddie.geektime.CustomizeHttpHandler - 接收到的请求 URL 为：/favicon.ico
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [ACTIVE] Timeout
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 9] Cancelled
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 127.0.0.1:50647<->127.0.0.1:8088[ACTIVE][r:w]: Shutdown
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalHttpAsyncClient - [exchange: 9] connection aborted
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Releasing connection: [id: http-outgoing-4][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager - Connection released: [id: http-outgoing-4][route: {}->http://localhost:8088][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.conn.ManagedNHttpClientConnectionImpl - http-outgoing-4 0.0.0.0:50647<->127.0.0.1:8088[CLOSED][]: Shutdown
+DEBUG I/O dispatcher 97 org.apache.http.impl.nio.client.InternalIODispatch - http-outgoing-4 [CLOSED]: Disconnected
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e
