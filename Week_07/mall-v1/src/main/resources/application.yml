@@ -1,0 +1,24 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/mail?useSSL=false&serverTimezone=GMT%2B8&characterEncoding=UTF-8
+      username: root
+      password:
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3316/mail?useSSL=false&serverTimezone=GMT%2B8&characterEncoding=UTF-8
+      username: root
+      password:
+
+debug: false
+mybatis-plus:
+  mapper-locations:
+    - classpath*:/mapper/**/*.xml
+  type-aliases-package: com.holddie.geektime.mall.entity
+  global-config:
+    db-config:
+      id-type: auto
