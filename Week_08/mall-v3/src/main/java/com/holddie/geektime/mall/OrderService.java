@@ -1,10 +1,13 @@
 package com.holddie.geektime.mall;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.shardingsphere.transaction.annotation.ShardingTransactionType;
+import org.apache.shardingsphere.transaction.core.TransactionType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.SQLException;
 import java.util.List;
 
 @Service
@@ -13,9 +16,6 @@ public class OrderService extends ServiceImpl<OrderMapperMaster, Order> implemen
     @Autowired
     private OrderMapperMaster orderMapperMaster;
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-
     @Override
     public List<Order> getMasterOrder() {
         System.out.println("查询主库");
@@ -23,13 +23,19 @@ public class OrderService extends ServiceImpl<OrderMapperMaster, Order> implemen
     }
 
     public void createOrder(Order order) {
-        StringBuffer sb = new StringBuffer();
-        sb.append("insert into t_order(id, user_id)");
-        sb.append("values(");
-        sb.append(order.getId());
-        sb.append(",");
-        sb.append(order.getUserId());
-        sb.append(")");
-        jdbcTemplate.update(sb.toString());
+        orderMapperMaster.insertSelective(order);
+    }
+
+    @Override
+    @Transactional
+    @ShardingTransactionType(TransactionType.XA)
+    public void addSameOrders() {
+        for (int i = 0; i < 10; i++) {
+            Order order = new Order();
+            order.setId(543800 + i);
+            order.setUserId(8 + i);
+            order.setStatus("INSERT_TEST");
+            orderMapperMaster.insertSelective(order);
+        }
     }
 }

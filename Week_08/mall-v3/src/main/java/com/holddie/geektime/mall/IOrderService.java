@@ -9,4 +9,6 @@ public interface IOrderService extends IService<Order> {
 
     List<Order> getMasterOrder();
 
+    void addSameOrders();
+
 }

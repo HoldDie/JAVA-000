@@ -34,4 +34,10 @@ public class TestDsController {
         orderService.createOrder(order);
         return "success";
     }
+
+    @RequestMapping(path = "/create/orders", method = {RequestMethod.GET})
+    public String createOrders() {
+        orderService.addSameOrders();
+        return "success";
+    }
 }
